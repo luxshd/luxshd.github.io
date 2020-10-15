@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Hello, Web33!</h1>
+    
+    <div class="container min-vh-100 p-0 d-flex flex-column flex">
+
+        <header>
+            <nav class="navbar navbar-light bg-dark">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand border border-2 border-primary p-2 rounded text-light" href="#">
+                        <i class="fas fa-project-diagram"></i>&nbsp;
+                        Webprod
+                    </a>
+    
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </nav>
+        </header>    
+
+        <main class="flex-grow-1">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+    
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img carousel-img-1"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Разработка сайтов</h5>
+                        <p>Создание сайтов любой сложности.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img carousel-img-2"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Решения</h5>
+                            <p>Webprod - это простые решение сложных задач.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img carousel-img-3"></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Время</h5>
+                            <p>Разработка в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+    
+            <ul class="list-group mt-5">
+
+                <li class="list-group-item text-center bg-success">
+                    <h3>Домашние задания</h3>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework1.html">1: Первый урок</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework2.html">2: Резюме</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework3.html">3: CSS разметка</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework4.html">4: CSS разметка v.2</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework5.html">5: Щрифты</a>
+                    <a target="_blank" class="ml-3" href="https://github.com/luxshd/homework5"><i class="fab fa-github"></i> Git</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework6.html">6: Селекторы</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/additional_hw6.html">6.1: Селекторы v.2</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework7.html">7: Flexbox</a>
+                    <a target="_blank" class="ml-3" href="https://github.com/luxshd/homework7"><i class="fab fa-github"></i> Git</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework8.html">8: Анимация</a>
+                    <a target="_blank" class="ml-3" href="https://github.com/luxshd/homework5"><i class="fab fa-github"></i> Git</a>
+                </li>
+
+                <li class="list-group-item bg-light">
+                    <a target="_blank" href="./assets/pages/homework9.html">9: bootstrap</a>    
+                </li>
+                
+            </ul>
+        </main>
+        
+
+        <footer class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
 </html>

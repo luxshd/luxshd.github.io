@@ -1,0 +1,126 @@
+@font-face{
+    font-family: 'AlfaSlabOne';
+    src: url(../../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'CarterOne';
+    src: url(../../fonts/CarterOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Cairo';
+    src: url(../../fonts/Cairo-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Oswald';
+    src: url(../../fonts/Oswald-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Mali';
+    src: url(../../fonts/Mali-SemiBold.ttf);
+}
+
+
+@font-face{
+    font-family: 'Cookie';
+    src: url(../../fonts/Cookie-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'CaveatBold';
+    src: url(../../fonts/Caveat-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'DMMedium';
+    src: url(../../fonts/DMMono-Medium.ttf);
+}
+
+
+
+body{
+    margin: 0;
+}
+
+main{
+    margin: 0 auto;
+    height: 100vh;
+    width: 600px;
+    background: url(../../img/homework5/bg.jpg);
+    background-size: cover;
+    border-left: solid 50px #ce5151;
+    border-right: solid 50px #464694;
+}
+
+p:first-child{
+    margin-top: 0;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.p1{
+    font-family: 'AlfaSlabOne';
+    font-size: 55px;
+    color: tomato;
+    line-height: 60px;
+}
+
+.p2{
+    font-family: 'CarterOne';
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.p3{
+    font-family: 'Cairo';
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.p4{
+    font-family: 'Oswald';
+    font-size: 20px;
+}
+
+.p5{
+    font-family: 'Mali';
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(231, 107, 24);
+    text-shadow: 0 0 5px rgb(231, 107, 24);
+}
+
+.p6{
+    font-family: 'Cookie';
+    font-size: 50px;
+}
+
+.p7{
+    font-family: 'CaveatBold';
+    font-size: 25px;
+    width: 470px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px white;
+    margin: 0 auto;
+    transform: translateY(-30px) rotate(-10deg);
+}
+
+.p8{
+    font-family: 'DMMedium';
+    font-size: 20px;
+    margin: auto;
+    text-align: right;
+    width: 90%;
+}
+
+.p8 span{
+    color: red;
+}

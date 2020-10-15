@@ -1,0 +1,34 @@
+.carousel-img{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hard-light;
+    background-color: rgba(0,0,0,0.5);
+}
+.carousel-img-1{
+    background-image: url(../img/1.jpg);
+}
+
+.carousel-img-2{
+    background-image: url(../img/2.jpg);
+}
+
+.carousel-img-3{
+    background-image: url(../img/3.jpg);
+}
+
+.carousel-inner{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+}
+
+.carousel-inner h5{
+    font-size: 3rem;
+}
+
+.carousel-inner p{
+    font-size: 1.8rem;
+}
+
+main{
+    
+}

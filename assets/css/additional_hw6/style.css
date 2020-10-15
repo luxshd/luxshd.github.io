@@ -1,0 +1,160 @@
+@font-face{
+    font-family: Lato;
+    src: url(../../fonts/Lato-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Oswald';
+    src: url(../../fonts/Oswald-Medium.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    min-width: 600px;
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item{
+    width: 360px;
+    height: 500px;
+    font-family: 'Lato';
+    background: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.photo{
+    height: 200px;
+    background: url(../../img/additional_hw6/1.jpg);
+    background-size: cover;
+}
+
+.date{
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+.more{
+    padding: 10px;
+    padding-top: 0;
+    color: #9c9c9c;
+}
+
+.rate{
+    width: 110px;
+    margin: 20px auto;
+}
+
+.footer{
+    background: black;
+    height: 40px;
+    color: #cfcbc8;
+    vertical-align: bottom;
+    margin-top: 31px;
+}
+
+.footer-item1{
+    transform: translate(5px, 5px);
+}
+
+.folder, .like{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+
+.like{
+    text-align: right;
+}
+
+a{
+    color: #000;
+}
+
+/****** ITEM 2 *****/
+
+.item2 .photo{
+    width: 340px;
+    height: 340px;
+    background: url('../../img/additional_hw6/2.jpg');
+    background-size: cover;
+    margin: 10px ;
+}
+
+.item2 .rate{
+    margin: 5px 0;
+}
+
+.item2 span{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.info{
+    padding: 10px;
+}
+
+.info p{
+    margin: 0;
+}
+
+.fa-star, .fa-star-half-alt{
+    color: #ffa400;
+}
+
+.artik{
+    font-weight: bold;
+}
+
+.act_p{
+    color: #38a260;
+}
+
+.yest_p{
+    color: #8a8e91;
+    text-decoration: line-through;
+}
+
+.sale_p{
+    color: #c45b69;
+}
+
+.cart{
+    margin: 10px 0;
+}
+
+button{
+    border-radius: 5px;
+    border-style: none;
+    font-size: 18px;
+    padding: 10px 12px;
+    margin-right: 5px;
+}
+
+.btn1{
+    background: #363940;
+    color: #f9fafe;
+    font-size: 18px;
+}
+
+.btn2, .btn3{
+    background: #e7e9ee;
+}

@@ -1,0 +1,71 @@
+body{
+    background: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+}
+
+p{
+    text-align: justify;
+}
+
+nav span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    border-left: solid 2px white;
+    padding-left: 5px;
+}
+
+h1{
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+    background: url(../../img/homework4/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+.div-content{
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    min-width: 420px;
+    max-width: 920px;
+}
+
+/** photocard **/
+.photocard{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px black;
+    text-align: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background: white;
+}
+
+.pc-header-div{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #e7497c, #4a5df0, #e7497c);
+}
+
+.photocard-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    margin: auto;
+    background: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) 50% ;
+    background-size: cover;
+    border: 3px solid white;
+    margin-top: -50px;
+}
