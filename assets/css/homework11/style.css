@@ -1,0 +1,87 @@
+body{
+    background-color: #F5F5F5;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.category-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    padding-bottom: 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.category-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.category-item:hover a{
+    text-decoration: underline;
+}
+
+.category-item-handbags{
+    background-image: url(../../img/homework11/cat1.jpg);
+}
+
+.category-item-watches{
+    background-image: url(../../img/homework11/cat2.jpg);
+}
+
+.category-item-shoes{
+    background-image: url(../../img/homework11/cat3.jpg);
+}
+
+.top-content-gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "area-main-img  area-main-img   area-main-img"
+        "area-handbags  area-watches    area-shoes";
+}
+
+.top-content-gridbox .nav-link{
+    font-weight: bold;
+}
+.bg-center{
+    background-position: center;
+}
+
+.inner-shadow{
+    box-shadow: inset -5px -5px 50px  rgba(255, 255, 255, 1);
+}
+
+.products-gridbox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact-content-gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "area-ship area-call .";
+}
+
+.bottom-content-gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; 
+}
+
+.products-gridbox .card:hover .card-text{
+    text-decoration: underline;
+}
+
+.products-gridbox .btn:hover{
+    background-color: #575757;
+}
