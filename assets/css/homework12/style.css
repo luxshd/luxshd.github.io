@@ -60,13 +60,12 @@ body{
     box-shadow: inset -5px -5px 50px  rgba(255, 255, 255, 1);
 }
 
-.products-flex{
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
+.products-grid{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.products-flex .card{
+.products-grid .card{
     margin: 8px;
 }
 
@@ -123,6 +122,11 @@ body{
 
     .bottom-content-gridbox{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .products-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
 }
