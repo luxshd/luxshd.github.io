@@ -1,0 +1,132 @@
+body{
+    background-color: #F5F5F5;
+}
+
+.category-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    padding-bottom: 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.category-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.category-item:hover a{
+    text-decoration: underline;
+}
+
+.category-item-handbags{
+    background-image: url(../../img/homework11/cat1.jpg);
+}
+
+.category-item-watches{
+    background-image: url(../../img/homework11/cat2.jpg);
+}
+
+.category-item-shoes{
+    background-image: url(../../img/homework11/cat3.jpg);
+}
+
+.top-content-gridbox{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "area-handbags"
+        "area-watches"    
+        "area-shoes";
+}
+
+.main-img-item{
+    display: none;
+}
+
+.top-content-gridbox .nav-link{
+    font-weight: bold;
+}
+.bg-center{
+    background-position: center;
+}
+
+.inner-shadow{
+    box-shadow: inset -5px -5px 50px  rgba(255, 255, 255, 1);
+}
+
+.products-flex{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.products-flex .card{
+    margin: 8px;
+}
+
+.contact-content-gridbox .text-light{
+    display: none;
+}
+
+.contact-content-gridbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "area-call";
+}
+
+.bottom-content-gridbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; 
+}
+
+.products-gridbox .card:hover .card-text{
+    text-decoration: underline;
+}
+
+.products-gridbox .btn:hover{
+    background-color: #575757;
+}
+
+@media (min-width: 576px){
+
+    .main-img-item{
+        display: block;
+    }
+
+    .top-content-gridbox{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "area-main-img  area-main-img   area-main-img"
+        "area-handbags  area-watches    area-shoes";
+    }
+
+    .products-gridbox{
+        
+    }
+
+    .contact-content-gridbox .text-light{
+        display: block;
+    }
+
+    .contact-content-gridbox{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "area-ship area-call .";
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .bottom-content-gridbox{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
