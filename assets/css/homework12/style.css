@@ -96,22 +96,6 @@ body{
 
 @media (min-width: 576px){
 
-    .main-img-item{
-        display: block;
-    }
-
-    .top-content-gridbox{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "area-main-img  area-main-img   area-main-img"
-        "area-handbags  area-watches    area-shoes";
-    }
-
-    .products-gridbox{
-        
-    }
-
     .contact-content-gridbox .text-light{
         display: block;
     }
@@ -124,6 +108,18 @@ body{
 }
 
 @media (min-width: 768px){
+
+    .main-img-item{
+        display: block;
+    }
+
+    .top-content-gridbox{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "area-main-img  area-main-img   area-main-img"
+        "area-handbags  area-watches    area-shoes";
+    }
 
     .bottom-content-gridbox{
         grid-template-columns: 1fr 1fr 1fr 1fr;
