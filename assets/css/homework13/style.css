@@ -1,0 +1,26 @@
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+main{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+small{
+    display: none;
+}
+
+input:valid + small + small{
+    display: inline;
+}
+
+input:invalid + small{
+    display: inline;
+}
