@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/homework13/style.css">
+
+</head>
+<body>
+    
+    <div class="container main-div min-vh-100 bg-light p-0">
+
+        <header style="grid-area: header;" class="bg-warning">
+            
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <i class="fab fa-docker"></i>
+                    </a>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <main style="grid-area: main;" class="bg-light">
+
+            <form class="bg-light p-5 shadow">
+
+                <div class="mb-3 d-flex flex-column align-items-center">
+                  <label for="tel" class="form-label">Ваш телефон: *</label>
+                  <input required type="tel" id="tel" pattern="^(\+380[0-9]{9}|\+38\(0[0-9]{2}\)[0-9]{7}|\+38\(0[0-9]{2}\)[0-9]{3}-[0-9]{2}-[0-9]{2})$">
+                  <small class="text-danger">* Обязательно к заполнению</small>
+                  <small class="text-success">Данные введены верно</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Перезвоните мне</button>
+
+            </form>
+
+        </main>
+
+        <footer style="grid-area: footer;">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <div class="container-md">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+              </nav>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
