@@ -1,0 +1,8 @@
+.scrollbox{
+    overflow: scroll;
+    height: 500px;
+}
+
+ol{
+    list-style: none;
+}
