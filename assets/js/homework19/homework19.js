@@ -81,14 +81,14 @@ function simpleNumbers(){
             console.log(`Число ${i} простое.`);
 
             let li = document.createElement('li');
-            li.innerHTML = `Число ${i} простое.`;
+            li.innerHTML = `Число ${i} <span class="text-success">простое</span>.`;
             parent.appendChild(li);
         } else {
             console.log(`Число ${i} сложное.`);
 
             let parent = document.querySelector('#content');
             let li = document.createElement('li');
-            li.innerHTML = `Число ${i} сложное.`;
+            li.innerHTML = `Число ${i} <span class="text-danger">сложное</span>.`;
             parent.appendChild(li);
         }
     }
