@@ -16,7 +16,7 @@ function from21to57(){
     let parent = document.querySelector('#content');
     parent.innerHTML = '';
 
-    for(let i = 27; i <= 57; i++){
+    for(let i = 21; i <= 57; i++){
         console.log(i);
 
         let li = document.createElement('li');
@@ -51,13 +51,12 @@ function summFrom1to100(){
     let count = 0;
     while(i <= 100){
         count = count + i;
-        console.log(count);
         i++;
-
-        let li = document.createElement('li');
-        li.innerHTML = count;
-        parent.appendChild(li);
     }
+
+    let li = document.createElement('li');
+        li.innerHTML = `Сумма чисел равна ${count}`;
+        parent.appendChild(li);
 }
 
 function simpleNumbers(){
@@ -83,13 +82,6 @@ function simpleNumbers(){
             let li = document.createElement('li');
             li.innerHTML = `Число ${i} <span class="text-success">простое</span>.`;
             parent.appendChild(li);
-        } else {
-            console.log(`Число ${i} сложное.`);
-
-            let parent = document.querySelector('#content');
-            let li = document.createElement('li');
-            li.innerHTML = `Число ${i} <span class="text-danger">сложное</span>.`;
-            parent.appendChild(li);
-        }
+        } 
     }
 }
