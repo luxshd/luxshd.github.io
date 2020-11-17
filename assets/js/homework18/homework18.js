@@ -30,19 +30,7 @@ function getYear(){
     let year = +prompt('Введите год');
     let isV = false;
 
-    if (year % 4 == 0) {
-        isV = true;
-    }
-
-    if (year % 100 == 0) {
-        isV = false;
-    }
-
-    if (year % 400 == 0) {
-        isV = true;
-    }
-
-    if(isV) {
+    if((year % 400 == 0) || (year % 4 ==0) && (year % 100 != 0)){
         console.log(`${year}г. высокосный`);
     } else {
         console.log(`${year}г. не высокосный`);
