@@ -39,9 +39,11 @@ function evenFrom0to100(){
     }
 }
 
-let i = 1;
+
 
 function summFrom1to100(){
+
+    let i = 1;
 
     let parent = document.querySelector('#content');
     parent.innerHTML = '';
