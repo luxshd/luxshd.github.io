@@ -64,7 +64,7 @@
                 div.classList.add('warm');
             }
             
-            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}&deg;C</p>`;
             december.appendChild(div);
             monthDay++;
             if(monthDay == 32){
@@ -78,7 +78,7 @@
                 div.classList.add('warm');
             }
 
-            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}&deg;C</p>`;
             january.appendChild(div);
             monthDay++;
             if(monthDay == 32){
@@ -92,7 +92,7 @@
                 div.classList.add('warm');
             }
 
-            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}&deg;C</p>`;
             february.appendChild(div);
             monthDay++;
             
