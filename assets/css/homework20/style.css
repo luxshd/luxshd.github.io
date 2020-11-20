@@ -1,0 +1,11 @@
+.hw-1{
+    background-color: rgba(219, 214, 214, 0.5);
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
