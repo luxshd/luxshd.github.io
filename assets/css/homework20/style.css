@@ -62,6 +62,10 @@
     font-size: 1.5rem;
 }
 
-.month .range{
-    background-color: rgb(117, 223, 131)!important;
+.month .buy-day{
+    background-color: green!important;
+}
+
+.sell-day{
+    background-color: orange!important;
 }

@@ -123,8 +123,9 @@
         let bestDeffs = [];
         let buyingDays = [];
         let sellingDays = [];
-        let index;
-
+        let index = 0;
+        let indexBuy = 0;
+        let indexSell = 0;
         let maxProfit = 0;
 
         for(let i = 0; i < bitCoinPrices.length; i++){
@@ -141,8 +142,8 @@
 
                 if(deff > maxDeff){
                     maxDeff = deff;
-                    buyingDay = i + 1;
-                    sellingDay = j + 1;
+                    buyingDay = i;
+                    sellingDay = j;
                 }
             }
 
@@ -160,10 +161,11 @@
             }
         }
 
-        console.log(`Самая выгодная сделка: покупка - ${buyingDays[index]} числа, продажа - ${sellingDays[index]}, прибыль - ${maxProfit}`);
-
+        indexBuy = buyingDays[index] + 1;
+        indexSell = sellingDays[index] + 1;
 
         //Вывод в html
+        console.log(bitCoinPrices);
         let hw2 = document.querySelector('.monthCrypto');
 
         for(let i = 0; i < bitCoinPrices.length; i++){
@@ -171,8 +173,11 @@
                 hw2.innerHTML = '';
             }
             let div = document.createElement('div');
-            if((i >= buyingDays[index-1]) && (i < sellingDays[index])){
-                div.classList.add('range');
+            if(i == (indexBuy - 1)){
+                div.classList.add('buy-day');
+            }
+            if(i == (indexSell - 1)){
+                div.classList.add('sell-day');
             }
             div.innerHTML = `<span>${i+1}</span><p><b>${bitCoinPrices[i]}$</b></p>`;
 
@@ -181,17 +186,17 @@
 
         //Показ дня покупки
         let buy = document.getElementById('buy');
-        buy.innerHTML = `<i class="fas fa-shopping-cart text-success"></i>&nbsp;Выгоднее всего <b>купить</b> криптовалюту <b>${buyingDays[index]}</b> числа.`;
+        buy.innerHTML = `<i class="fas fa-shopping-cart text-success"></i>&nbsp;Выгоднее всего <b>купить</b> криптовалюту <b>${indexBuy}</b> числа.`;
 
         //Показ дня продажи
         let sell = document.getElementById('sell');
-        sell.innerHTML = `<i class="fas fa-coins text-warning"></i>&nbsp;Выгоднее всего <b>продать</b> криптовалюту <b>${sellingDays[index]}</b> числа.`;
+        sell.innerHTML = `<i class="fas fa-coins text-warning"></i>&nbsp;Выгоднее всего <b>продать</b> криптовалюту <b>${indexSell}</b> числа.`;
         
         //Показ прибыли
         let profit = document.getElementById('profit');
         profit.innerHTML = `<i class="fas fa-hand-holding-usd text-info"></i>&nbsp;Совершённая <b>сделка</b> принесёт <b>${maxProfit}$</b> прибыли.`;
 
-        //Подсветка дат
+        console.log(`Самая выгодная сделка: покупка - ${indexBuy} числа, продажа - ${indexSell}, прибыль - ${maxProfit}`);
         
     }
     
