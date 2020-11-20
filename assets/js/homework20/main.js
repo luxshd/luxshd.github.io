@@ -111,8 +111,9 @@
     //д/з №2
     function getCryptoValues(){
         let bitCoinPrices = [];
+        let arrayLength = 30;
 
-        for(let i = 0; i < 30; i++){
+        for(let i = 0; i < arrayLength; i++){
             let someNumber = Math.random();
             someNumber = someNumber * 100 + 1;
             someNumber = Math.round(someNumber);
