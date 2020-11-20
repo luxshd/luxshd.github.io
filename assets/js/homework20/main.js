@@ -44,6 +44,70 @@
     console.log(`Было ${freezingCounter} замерзаний.`);
     console.log(`Самый длинный период заморозков составил ${maxColdDaysCount} дней.`);
 
+    // Вывод данных в HTML
+
+    //Задание 1
+    //Показ массива температур
+    let december = document.querySelector('.december');
+    let january = document.querySelector('.january');
+    let february = document.querySelector('.february');
+    let monthDay = 1;
+    let backgroundPic = '';
+
+    for(let i = 0; i < winterDays.length; i++){
+
+        if (i < 31){
+            let div = document.createElement('div');
+            if(winterDays[i] < 0){
+                div.classList.add('cold');
+            } else {
+                div.classList.add('warm');
+            }
+            
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            december.appendChild(div);
+            monthDay++;
+            if(monthDay == 32){
+                monthDay = 1;
+            }
+        } else if (i < 62){
+            let div = document.createElement('div');
+            if(winterDays[i] < 0){
+                div.classList.add('cold');
+            } else {
+                div.classList.add('warm');
+            }
+
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            january.appendChild(div);
+            monthDay++;
+            if(monthDay == 32){
+                monthDay = 1;
+            }
+        } else if (i < 91){
+            let div = document.createElement('div');
+            if(winterDays[i] < 0){
+                div.classList.add('cold');
+            } else {
+                div.classList.add('warm');
+            }
+
+            div.innerHTML = `<span>${monthDay}</span><p class="temp">${winterDays[i]}</p>`;
+            february.appendChild(div);
+            monthDay++;
+            
+        }
+        
+    }
+
+    //Показ кол-ва замерзаний
+    let freeze = document.getElementById('freeze');
+    freeze.innerHTML = `<i class="fas fa-snowflake text-primary"></i> &nbsp;Количество замерзаний: <b>${freezingCounter}</b>`;
+
+    //Показ самого длинного периода
+    let freezePeriod = document.getElementById('freezePeriod');
+    freezePeriod.innerHTML = `<i class="fas fa-temperature-low text-primary"></i> &nbsp;Самый длинный период заморозков: <b>${maxColdDaysCount}</b> дней.`;
+
     //д/з №2
     function getCryptoValues(){
         let bitCoinPrices = [];
@@ -97,17 +161,21 @@
 
         console.log(`Самая выгодная сделка: покупка - ${buyingDays[index]} числа, продажа - ${sellingDays[index]}, прибыль - ${maxProfit}`);
 
-        let hw2text = document.getElementById('hw2text');
-        hw2text.classList.add = 'visible';
 
-        let hw2 = document.getElementById('hw2');
-        hw2.innerHTML = '<span id="hw2text" class="visible"><b>Массив цен:</b>&nbsp;</span>';
+        //Вывод в html
+        let hw2 = document.querySelector('.monthCrypto');
 
         for(let i = 0; i < bitCoinPrices.length; i++){
-            let span = document.createElement('span');
-            span.innerHTML = `<span>${bitCoinPrices[i]}&nbsp;&nbsp;</span>`;
+            if(i == 0){
+                hw2.innerHTML = '';
+            }
+            let div = document.createElement('div');
+            if((i >= buyingDays[index-1]) && (i < sellingDays[index])){
+                div.classList.add('range');
+            }
+            div.innerHTML = `<span>${i+1}</span><p><b>${bitCoinPrices[i]}$</b></p>`;
 
-            hw2.appendChild(span);
+            hw2.appendChild(div);
         }
 
         //Показ дня покупки
@@ -121,34 +189,10 @@
         //Показ прибыли
         let profit = document.getElementById('profit');
         profit.innerHTML = `<i class="fas fa-hand-holding-usd text-info"></i>&nbsp;Совершённая <b>сделка</b> принесёт <b>${maxProfit}$</b> прибыли.`;
+
+        //Подсветка дат
+        
     }
     
 
-    // Вывод данных в HTML
-
-    //Задание 1
-    //Показ массива температур
-    let hw1 = document.getElementById('hw1');
-
-    for(let i = 0; i < winterDays.length; i++){
-        let span = document.createElement('span');
-        if(i != winterDays.length - 1){
-            span.innerHTML = `<span>${winterDays[i]},&nbsp;</span>`;
-        } else {
-            span.innerHTML = `<span>${winterDays[i]}&nbsp;</span>`;
-        }
-        
-        hw1.appendChild(span);
-    }
-
-    //Показ кол-ва замерзаний
-    let freeze = document.getElementById('freeze');
-    freeze.innerHTML = `<i class="fas fa-snowflake text-primary"></i> &nbsp;Количество замерзаний: <b>${freezingCounter}</b>`;
-
-    //Показ самого длинного периода
-    let freezePeriod = document.getElementById('freezePeriod');
-    freezePeriod.innerHTML = `<i class="fas fa-temperature-low text-primary"></i> &nbsp;Самый длинный период заморозков: <b>${maxColdDaysCount}</b> дней.`;
-
-    //Задание 2
-    //Пока массива цен
     

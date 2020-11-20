@@ -1,11 +1,67 @@
-.hw-1{
-    background-color: rgba(219, 214, 214, 0.5);
-}
-
 .invisible{
     display: none;
 }
 
 .visible{
     display: block;
+}
+
+.month{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.month div{
+    background-color: #f5f0e8;
+}
+
+.month div span{
+    font-size: 0.7rem;
+}
+
+.month div:nth-child(6), .month div:nth-child(7), .month div:nth-child(13), .month div:nth-child(14), .month div:nth-child(20), .month div:nth-child(21), .month div:nth-child(27), .month div:nth-child(28){
+    background-color: #f3cfcf;
+    color: red;
+}
+
+@media(min-width: 768px){
+    .month div{
+
+        padding: 0.5rem;
+    }
+
+    .month div span{
+        font-size: 1.5rem;
+    }
+
+    .month div p{
+        font-size: 1.7rem;
+    }
+}
+
+.cold, .warm{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cold{
+    background-image: url(../../img/homework20/cold.png);
+}
+
+.warm{
+    background-image: url(../../img/homework20/sun.png);
+}
+
+.temp{
+    font-weight: bold;
+}
+
+#freeze, #freezePeriod, #buy, #sell, #profit{
+    font-size: 1.5rem;
+}
+
+.month .range{
+    background-color: rgb(117, 223, 131)!important;
 }
