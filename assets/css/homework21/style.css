@@ -1,0 +1,17 @@
+.container > div{
+    max-width: 500px;
+    margin: auto;
+    background-color: rgba(173, 169, 169, 0.5);
+}
+
+small{
+    display: none;
+}
+
+input:valid + small + small{
+    display: inline;
+}
+
+input:invalid + small{
+    display: inline;
+}
