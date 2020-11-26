@@ -27,7 +27,6 @@ function startGame(){
     secret = getSecretNumber();
 
     tryOutput.innerHTML = tryCount;
-    console.log(tryCount);
 }
 
 function getSecretNumber(){
