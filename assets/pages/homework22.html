@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/homework22/style.css">
+
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container text-center m-auto p-5">
+
+        
+        <h2>Угадай число от 1 до 100</h2>
+
+        <div class="d-none">?</div>
+
+        <button onclick="startGame()" class="btn btn-success m-5">Начать игру</button>
+
+        <div class="gameDiv text-left d-none">
+
+            <p>Осталось попыток: <output></output></p>
+            
+            <label for="userNumber">Ваш вариант:</label>
+
+            <input type="number" name="userNumber" id="userNumber">
+
+            <button onclick="playGame()" id='answer'>Дать ответ</button>
+
+            <output class="mt-4 mb-4"></output>
+
+            <button onclick="startGame()" class="btn btn-info d-none">Начать новую игру</button>
+
+        </div>
+        
+
+    </div>
+    
+    <script src="../js/homework22/main.js"></script>
+</body>
+</html>

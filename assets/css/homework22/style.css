@@ -1,0 +1,8 @@
+.gameDiv{
+    max-width: 500px;
+    margin: auto;
+}
+
+h2 + div{
+    font-size: 15rem;
+}
