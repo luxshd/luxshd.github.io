@@ -37,6 +37,7 @@ function getSecretNumber(){
 function playGame(){
 
     if(tryCount > 0){
+        tryCount--;
         tryOutput.innerHTML = tryCount;
 
         let userValue = userNumber.value;
@@ -54,10 +55,14 @@ function playGame(){
             newGameBtn.classList.add('d-block');
         }
 
-        tryCount--;
+        
 
     } else {
-
+        answerOutput.innerHTML = `Вы проиграли, я загадал число ${secret}`;
+            qSign.innerHTML = '<span class="text-danger">X</span>';
+            let newGameBtn = document.querySelector('output + button');
+            newGameBtn.classList.remove('d-none');
+            newGameBtn.classList.add('d-block');
     }
     
 }
