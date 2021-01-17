@@ -1,0 +1,52 @@
+.logo-img{
+    max-width: 300px;
+}
+
+.animated-row{
+    background: rgba(0,0,0,0.5);
+}
+
+.welcome-title{
+    font-size: 65px;
+}
+
+.logo-btn{
+    display: inline-block;
+    margin-right: 1rem;
+    width:32px;
+    height: 32px;
+    background-image: url(../images/lagoon-logo.png);
+    background-size: contain;
+}
+
+.itemd{
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+    min-width: 400px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 30px 0px;
+    background: rgba(0,0,0,0.25);
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+.itemd:hover{
+    background-color: white;
+    color: black;
+}
+
+object{
+    width: 30px;
+}
+
+.services-list .item{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contact-row{
+    background-color: rgba(0, 0, 0, 0.7);
+}
