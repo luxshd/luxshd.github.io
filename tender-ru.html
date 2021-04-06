@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--редкатор текста-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="markitup/sets/html/set.js"></script>
+
+    <script src="assets/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
+    <link rel="stylesheet" type="text/css" href="markitup/sets/html/style.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Контруктор контента</title>
+</head>
+<body>
+    <div class="min-vh-100">
+        <div class="container bg-white d-flex flex-column">
+            <label for="tName">Название тендера:</label>
+            <input type="text" name="tName" id="tName" value="">
+    
+            <label for="">Заказчик торгов:</label>
+            <input type="text" name="tOrder" id="tOrder" value="ООО «РУШ» сеть магазинов «EVA»">
+            
+            <label for="tOrderAdress">Местонахождение:</label>
+            <input type="text" name="tOrderAdress" id="tOrderAdress" value="г. Днепр ул. Антоновича, 6">
+            <label for="">Ответственный за проведения тендера:</label>
+            <select name="tOrderName" id="tOrderName">
+                <option value="Карнаух Наталія (095) 780-31-29, e-mail: tender@terwingroup.com">Карнаух Наталья</option>
+                <option value="Фастовець Наталя, моб. (067) 633-28-72, e-mail: tender@terwingroup.com">Фастовец Наталья</option>
+                <option value="Шустова Марина, моб. (097) 640-67-01, e-mail: tender@terwingroup.com">Шустова Марина</option>
+                <option value="Самоіщенко Оксана, моб. (098) 836-25-83, e-mail: tender@terwingroup.com">Самоищенко Оксана</option>
+                <option value="Бочкарь Антон, т. моб (050) 66-44-6-44, +38 (067) 125-71-02, e-mail: tender@terwingroup.com">Бочкарь Антон</option>
+                <option value="Пономаренко Роман т. моб (066) 387-42-76, e-mail: tender@terwingroup.com">Пономаренко Роман</option>
+            </select>
+            <label for="">Предложения принимаются до</label>
+            <input type="date" name="tDate" id="tDate" value="">
+            <label for="tItem">Предмет тендера:</label>
+            <input type="text" name="tItem" id="tItem" value="">
+            
+            <textarea id="markItUp" name="markItUp" cols="80" rows="20"></textarea>
+    
+            <input type="submit" value="Сгенерировать текс тендера" onclick="tenderGeneratorRu()">
+    
+            <textarea id="tenderDisplay" name="tenderDisplay" cols="80" rows="20"></textarea>
+        </div>
+    </div>
+    
+
+    <!--редактор текста-->
+    <script type="text/javascript" >
+        jQuery(document).ready(function() {
+           jQuery("#markItUp").markItUp(myHtmlSettings);
+        });
+     </script>
+</body>
+</html>

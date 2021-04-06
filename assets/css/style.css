@@ -1,0 +1,11 @@
+body{
+    background-color: #f2f8fd;
+    font-weight: 600;
+}
+
+input, select
+{
+    width: 700px;
+    height: 35px;
+    margin-bottom: 15px;
+}

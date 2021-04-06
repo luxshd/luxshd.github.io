@@ -1,0 +1,10 @@
+body{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f2f8fd;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
