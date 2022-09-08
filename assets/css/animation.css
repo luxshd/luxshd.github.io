@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 1568px;
+    margin: 0 auto;
+}
+
+.main-bg{
+    margin: 50px auto;
+    width: 766px;
+    height: 60px;
+    position: relative;
+    background-image: url(../../Frame.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.main-bg p{
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.main-bg p span{
+    display: inline;
+    opacity: 0;
+}
+
+.main-bg::after{
+    position: absolute;
+    content: '';
+    width: 177px;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+}
+
+section:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes step_opacity {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes line{
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes dots{
+    to{
+        scale: 1;
+    }
+}
+
+@keyframes show_ul{
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.s1{
+    animation: step_opacity 0.5s steps(1) 0s forwards;
+}
+.s2{
+    animation: step_opacity 0.5s steps(1) 0.1s forwards;
+}
+.s3{
+    animation: step_opacity 0.5s steps(1) 0.2s forwards;
+}
+.s4{
+    animation: step_opacity 0.5s steps(1) 0.3s forwards;
+}
+.s5{
+    animation: step_opacity 0.5s steps(1) 0.4s forwards;
+}
+.s6{
+    animation: step_opacity 0.5s steps(1) 0.5s forwards;
+}
+.s7{
+    animation: step_opacity 0.5s steps(1) 0.6s forwards;
+}
+.s8{
+    animation: step_opacity 0.5s steps(1) 0.7s forwards;
+}
+.s9{
+    animation: step_opacity 0.5s steps(1) 0.8s forwards;
+}
+.s10{
+    animation: step_opacity 0.5s steps(1) 0.9s forwards;
+}
+.s11{
+    animation: step_opacity 0.5s steps(1) 1.0s forwards;
+}
+.s12{
+    animation: step_opacity 0.5s steps(1) 1.1s forwards;
+}
+.s13{
+    animation: step_opacity 0.5s steps(1) 1.2s forwards;
+}
+.s14{
+    animation: step_opacity 0.5s steps(1) 1.3s forwards;
+}
+.s15{
+    animation: step_opacity 0.5s steps(1) 1.4s forwards;
+}
+.s16{
+    animation: step_opacity 0.5s steps(1) 1.5s forwards;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-item{
+    text-align: center;
+    height: 168px;
+}
+
+.grid-item p{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 168px;
+    text-transform: uppercase;
+    color: #363636;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.grid-item-1{
+    background: #F4A578;
+}
+.grid-item-2{
+    background: #BEA0C6;
+}
+.grid-item-3{
+    background: #FDF9C2;
+}
+.grid-item-4{
+    background: #C1DE61;
+}
+.grid-item-5{
+    background: #F18E8C;
+}
+.grid-item-6{
+    background: #E6F0CD;
+}
+.grid-item-7{
+    background: #F7DD33;
+}
+.grid-item-8{
+    background: #B2D8F3;
+}
+
+.opened{
+    width: 784px;
+    height: 581px;
+    background: rgb(197, 191, 191);
+    padding: 60px;
+    background-image: url(../../image4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.opened h2{
+    text-transform: uppercase;
+}
+
+.opened .info{
+    width: 680px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.opened .info::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: black;
+    left: 4px;
+    transform: translateY(-100%);
+    animation: line 1s 0.5s ease forwards;
+}
+
+.opened ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: show_ul 1s 1s ease forwards;
+}
+
+.opened ul li{
+    text-transform: uppercase;
+    margin: 26px;
+    position: relative;
+}
+
+.opened ul li::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    left: -26px;
+    height: 10px;
+    background: black;
+    transform-origin: 50% 50%;
+    scale: 0.0;
+    border-radius: 50%;
+    animation: dots 1s ease  forwards;
+}
+
+.opened ul li:nth-of-type(1):before{
+    animation-delay: 1s;
+}
+.opened ul li:nth-of-type(2):before{
+    animation-delay: 1.1s;
+}
+.opened ul li:nth-of-type(3):before{
+    animation-delay: 1.2s;
+}
+.opened ul li:nth-of-type(4):before{
+    animation-delay: 1.3s;
+}
+.opened ul li:nth-of-type(5):before{
+    animation-delay: 1.4s;
+}
+.opened ul li:nth-of-type(6):before{
+    animation-delay: 1.5s;
+}
