@@ -54,6 +54,6 @@ function formatTextToHTML(input) {
 
 function processText() {
     const input = document.getElementById('inputText').value;
-    const outputHTML = formatTextToHTML(input);
+    const outputHTML = formatTextToHTML(input) + "\n";
     document.getElementById('output').innerText = outputHTML;
 }
